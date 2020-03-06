@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { LazyLoadImageModule, intersectionObserverPreset } from 'ng-lazyload-image';
 
 import { AppComponent } from './app.component';
@@ -15,10 +14,16 @@ import { ResponsiveImageComponent } from './pages/responsive-image/responsive-im
 import { BigImagesComponent } from './pages/big-images/big-images.component';
 import { AsyncImagesComponent } from './pages/async-images/async-images.component';
 import { CustomObserverComponent } from './pages/custom-observer/custom-observer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
+    FooterComponent,
     FadeInImageComponent,
     BgImageComponent,
     DefaultImageComponent,
@@ -29,28 +34,12 @@ import { CustomObserverComponent } from './pages/custom-observer/custom-observer
     ResponsiveImageComponent,
     BigImagesComponent,
     AsyncImagesComponent,
-    CustomObserverComponent
+    CustomObserverComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      {
-        path: '',
-        redirectTo: '/fade-in-image',
-        pathMatch: 'full'
-      },
-      { path: 'change-image', component: ChangeImageComponent },
-      { path: 'fade-in-image', component: FadeInImageComponent },
-      { path: 'bg-image', component: BgImageComponent },
-      { path: 'default-image', component: DefaultImageComponent },
-      { path: 'pixelated-image', component: PixelatedImageComponent },
-      { path: 'scroll-container', component: ScrollContainerComponent },
-      { path: 'on-load', component: OnLoadComponent },
-      { path: 'responsive-image', component: ResponsiveImageComponent },
-      { path: 'big-images', component: BigImagesComponent },
-      { path: 'async-images', component: AsyncImagesComponent },
-      { path: 'custom-observer', component: CustomObserverComponent }
-    ]),
+    AppRoutingModule,
     LazyLoadImageModule.forRoot(intersectionObserverPreset)
   ],
   providers: [],
