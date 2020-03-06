@@ -1,4 +1,4 @@
-# Angular8lazyloadimages
+# angular-8-lazy-load-images
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.
 

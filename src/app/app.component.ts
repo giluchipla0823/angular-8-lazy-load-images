@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular8lazyloadimages';
+  title = 'angular-8-lazy-load-images';
 }

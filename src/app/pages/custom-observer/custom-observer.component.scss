@@ -1,0 +1,9 @@
+img {
+    width: 480px;
+    min-height: 640px;
+    transition: opacity 1s;
+    opacity: 0;
+  }
+  img.ng-lazyloaded {
+    opacity: 1;
+  }

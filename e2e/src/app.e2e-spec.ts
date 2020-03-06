@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('angular8lazyloadimages app is running!');
+    expect(page.getTitleText()).toEqual('angular-8-lazy-load-images app is running!');
   });
 
   afterEach(async () => {

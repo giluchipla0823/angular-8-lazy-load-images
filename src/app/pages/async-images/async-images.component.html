@@ -1,0 +1,11 @@
+<p>Using "Promise.resolve('path')"</p>
+    <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="promiseImage | async" />
+
+    <p>Using "from(['path'])"</p>
+    <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="rxjsFromImage | async" />
+
+    <p>Using Promise and setTimeout</p>
+    <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="timeoutImage | async" />
+
+    <p>Using asyncScheduler</p>
+    <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="asyncSchedulerImage | async" />

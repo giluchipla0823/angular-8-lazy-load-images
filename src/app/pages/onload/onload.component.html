@@ -1,0 +1,5 @@
+<div *ngIf="isLoading">Image is loading...</div>
+<div *ngIf="!isLoading">Image is loaded</div>
+<div [ngClass]="{ hidden: isLoading }">
+    <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="image" (onLoad)="onLoadImage($event)" />
+</div>

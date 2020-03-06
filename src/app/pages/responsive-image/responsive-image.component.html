@@ -1,0 +1,22 @@
+<div class="img-wrapper">
+    <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="images1" [useSrcset]="true" />
+  </div>
+  <div class="img-wrapper">
+    <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="images2" [useSrcset]="true" />
+  </div>
+  <div class="img-wrapper">
+    <picture>
+      <source media="(min-width: {{ screenLg }})" [attr.defaultImage]="defaultImage" [attr.lazyLoad]="image2" [attr.errorImage]="errorImage" />
+      <source media="(min-width: {{ screenMd }})" [attr.defaultImage]="defaultImage" [attr.lazyLoad]="image3" [attr.errorImage]="errorImage" />
+      <source media="(min-width: {{ screenSm }})" [attr.defaultImage]="defaultImage" [attr.lazyLoad]="image4" [attr.errorImage]="errorImage" />
+      <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="image1" [useSrcset]="true" />
+    </picture>
+  </div>
+  <div class="img-wrapper">
+    <picture>
+      <source media="(min-width: {{ screenLg }})" [attr.defaultImage]="defaultImage" [attr.lazyLoad]="image6" [attr.errorImage]="errorImage" />
+      <source media="(min-width: {{ screenMd }})" [attr.defaultImage]="defaultImage" [attr.lazyLoad]="image7" [attr.errorImage]="errorImage" />
+      <source media="(min-width: {{ screenSm }})" [attr.defaultImage]="defaultImage" [attr.lazyLoad]="image8" [attr.errorImage]="errorImage" />
+      <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="image5" [useSrcset]="true" />
+    </picture>
+  </div>

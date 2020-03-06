@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular8lazyloadimages": {
+    "angular-8-lazy-load-images": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular8lazyloadimages",
+            "outputPath": "dist/angular-8-lazy-load-images",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular8lazyloadimages:build"
+            "browserTarget": "angular-8-lazy-load-images:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular8lazyloadimages:build:production"
+              "browserTarget": "angular-8-lazy-load-images:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular8lazyloadimages:build"
+            "browserTarget": "angular-8-lazy-load-images:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular8lazyloadimages:serve"
+            "devServerTarget": "angular-8-lazy-load-images:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular8lazyloadimages:serve:production"
+              "devServerTarget": "angular-8-lazy-load-images:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular8lazyloadimages"
+  "defaultProject": "angular-8-lazy-load-images"
 }

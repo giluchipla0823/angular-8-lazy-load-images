@@ -1,0 +1,6 @@
+<div style="position: fixed; z-index: 100;">
+    <button (click)="loadImages()">Load Images</button>
+</div>
+<div *ngFor="let image of images">
+    <img height="480" [lazyLoad]="image" [customObservable]="loading$">
+</div>
